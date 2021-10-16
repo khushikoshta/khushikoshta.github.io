@@ -1,0 +1,163 @@
+@font-face {
+    font-family: bukhari-script;
+    src: url(assets/fonts/bukhari-script.ttf);
+}
+
+@font-face {
+    font-family: nickainley;
+    src: url(assets/fonts/Nickainley-Normal.otf);
+}
+
+@font-face {
+    font-family: aniyah;
+    src: url(assets/fonts/Aniyah.otf);
+}
+
+
+* {
+
+    background: linear-gradient(to right,#8b73ff,#5ce1e6);
+
+}
+
+
+
+
+.parentClass {
+    background-image: none;
+    position: relative;
+
+}
+
+.childClass {
+    background-image: none;
+    position: absolute;
+
+}
+
+#profile-image {
+    top: 57px;
+    left: 530px;
+    right: 530px;
+    height: 104px;
+    width: 107px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+
+#glowing-gif {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 233px;
+    width: 300px;
+    top: 10px;
+    left: 445px;
+    object-position: center;
+
+}
+
+#gif-container {
+    top: 10px;
+    height: 233px;
+    width: 300px;
+    z-index: -1;
+}
+
+#heading-container {
+    font-family: bukhari-script;
+    top: 180px;
+    left: 380px;
+    font-size: 30px;
+    color: #ff5757;
+    z-index: 1;
+
+}
+
+#heading-text {
+    text-shadow: 5px 5px #d9d9d9;
+    background-image: none;
+
+}
+
+#subheading-container {
+    top: 280px;
+    left: 200px;
+}
+
+#subheading-text {
+    font-family: nickainley;
+    color: #d9d9d9;
+    text-decoration: underline overline wavy #f1e740;
+    text-decoration-thickness: bold;
+    top: 280px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: bold;
+    background-image: none;
+
+
+
+}
+
+#footer-text {
+
+    font-family: aniyah;
+    color: #000;
+    font-size: 17.8px;
+    text-align: center;
+    background: none;
+    background-color: coral;
+    opacity: 85%;
+    background-size: 420px 64px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+#footer-div {
+    left: 10px;
+    top: 420px;
+    width: 417px;
+    height: 137px;
+    white-space: nowrap;
+}
+
+#social-links{
+
+    width: 280px;
+    height: 35.60px;
+}
+
+#instagram {
+    bottom: 10px;
+    left: 15px;
+}
+
+#ig {
+
+    width: 32.5px;
+    height: 32.5px;
+}
+
+#twitter {
+    bottom: 10px;
+    left: 56.5px;
+}
+
+#tw {
+    width: 32.5px;
+    height: 32.5px;
+}
+
+#linkedin {
+    bottom: 10px;
+    left: 104px;
+
+}
+
+#lkn {  
+    width: 32.5px;
+    height: 32.5px;
+}
