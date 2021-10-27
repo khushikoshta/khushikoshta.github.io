@@ -18,7 +18,7 @@
     src: url(assets/fonts/HARRYP__.TTF)
 }
 
-@media only screen and (min-width: 1024){
+@media only screen and (min-width: 1021px){
 
 #head-section{
     height: 25vw;
