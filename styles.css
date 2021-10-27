@@ -13,151 +13,203 @@
     src: url(assets/fonts/Aniyah.otf);
 }
 
-
-* {
-
-    background: linear-gradient(to right,#8b73ff,#5ce1e6);
-
+@font-face{
+    font-family: potterhead;
+    src: url(assets/fonts/HARRYP__.TTF)
 }
 
+@media only screen and (min-width: 1024){
 
-
-
-.parentClass {
-    background-image: none;
-    position: relative;
-
+#head-section{
+    height: 25vw;
+    width: 100%;
+    background:rgba(0, 0, 0,0.6) url(assets/img/bg1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
-.childClass {
-    background-image: none;
-    position: absolute;
-
-}
-
-#profile-image {
-    top: 57px;
-    left: 530px;
-    right: 530px;
-    height: 104px;
-    width: 107px;
-    border-radius: 15px;
-    z-index: 1;
-}
-
-
-#glowing-gif {
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    height: 233px;
-    width: 300px;
-    top: 10px;
-    left: 445px;
-    object-position: center;
-
-}
-
-#gif-container {
-    top: 10px;
-    height: 233px;
-    width: 300px;
-    z-index: -1;
-}
-
-#heading-container {
-    font-family: bukhari-script;
-    top: 180px;
-    left: 380px;
-    font-size: 30px;
-    color: #ff5757;
-    z-index: 1;
-
-}
-
-#heading-text {
-    text-shadow: 5px 5px #d9d9d9;
-    background-image: none;
-
-}
-
-#subheading-container {
-    top: 280px;
-    left: 200px;
-}
-
-#subheading-text {
-    font-family: nickainley;
-    color: #d9d9d9;
-    text-decoration: underline overline wavy #f1e740;
-    text-decoration-thickness: bold;
-    top: 280px;
-    font-size: 25px;
-    text-align: center;
-    line-height: 1.4;
-    font-weight: bold;
-    background-image: none;
-
-
-
-}
-
-#footer-text {
-
-    font-family: aniyah;
-    color: #000;
-    font-size: 17.8px;
-    text-align: center;
-    background: none;
-    background-color: coral;
-    opacity: 85%;
-    background-size: 420px 64px;
+#head-section #profile-photo{
+    border: 4px solid black;
     border-radius: 10px;
-    font-weight: bold;
-
+    width: 20%;
+    margin: 40px;
+}
+#head-section #right-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    float: right;
+    width: 70%;
+    height: 100%;
 }
 
-#footer-div {
-    left: 10px;
-    top: 420px;
-    width: 417px;
-    height: 137px;
-    white-space: nowrap;
+#head-section #right-container #text{
+    text-align: center;
 }
 
-#social-links{
-
-    width: 280px;
-    height: 35.60px;
+#head-section #title{
+    color: white;
+    font-size: 60px;
+    font-family: nickainley;
 }
 
-#instagram {
-    bottom: 10px;
-    left: 15px;
+#head-section #subtitle{
+    color: white;
+    font-size: 40px;
+    font-family: potterhead;
+    position: relative;
 }
 
-#ig {
-
-    width: 32.5px;
-    height: 32.5px;
+#head-section #subtitle::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0,0.6);
+    animation: uncover 2s forwards;
 }
 
-#twitter {
-    bottom: 10px;
-    left: 56.5px;
+nav{
+    font-family: monospace;
 }
 
-#tw {
-    width: 32.5px;
-    height: 32.5px;
+@keyframes uncover{
+    to{
+        left: 100%;
+    }
 }
 
-#linkedin {
-    bottom: 10px;
-    left: 104px;
-
+#skills{
+    position: relative;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: cursive;
+    margin: 70px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    font-weight:lighter;
+    background-color: black;
 }
 
-#lkn {  
-    width: 32.5px;
-    height: 32.5px;
+#skills:before,
+#skills:after{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ff0000, #fb0094);
+    background-size: 400% 400%;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: 20px;
+    z-index: -1;
+    animation: animate 3s ease alternate infinite;
+}
+
+#skills:after{
+    filter: blur(20px);
+}
+
+
+.para-section{
+    color: white;
+    font-family: monospace;
+    display: flex;
+}
+
+.para-section *{
+    margin: 20px;
+}
+
+.para-section .para-img{
+    width: 340px;
+    border: 4px solid white;
+    border-radius: 70px;
+    padding: 20px;
+}
+.para-section .para-head{
+    font-size: 40px;
+}
+.para-section .para-desc{
+    font-size: 20px;
+    text-align: justify;
+}
+
+section.row-reversed{
+    flex-direction: row-reverse;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* Contact_Me Styles */
+
+#contact-body{
+    background: rgba(0, 0, 0,0.7) url(assets/img/bg2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#cards-container{
+    border: 1px solid white;
+    border-radius: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px;
+}
+
+.social-card{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.social-card img{
+    width: 90%;
+}
+
+.head-txt{
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    margin: 30px;
+
+    margin-top: 0px;
+}
+
+#instagram{
+    filter: invert(1);
+}
+
+.social-card :hover{
+    opacity: 0.5;
+}
+#email{
+    font-family: monospace;
+    background-color: gray;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 30%;
+    margin:20px auto;
+}
 }
