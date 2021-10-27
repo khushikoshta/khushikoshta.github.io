@@ -23,9 +23,9 @@
     }
     #head-section #title{
         margin-top: 5px;
-        font-size: 30px;
+        font-size: 60px;
         text-align: center;
-        font-family: aniyah;
+        font-family: nickainley;
         color: white;
     } 
     #head-section #subtitle{
@@ -104,6 +104,14 @@
         text-align: justify;
         color: whitesmoke;
     }
+    #credit{
+        height: 70px;
+        background-color: gray;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        font-size: 18px;
+    }
     /* ContactMe Page Styles */
     #contact-body{
         background-color: black;
@@ -117,8 +125,9 @@
     #cards-container{
         border: 2px solid white;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
     .social-card{
         display: flex;
@@ -127,7 +136,7 @@
         margin: 20px;
     }
     .social-card img{
-        width: 90%;
+        width: 70px;
     }
     #instagram{
         filter: invert(1);
@@ -138,7 +147,7 @@
         text-align: center;
         margin: 20px;
         color: black;
-        border: 2px solid white;
         background-color: gray;
+        border-radius: 10px;
     }
 }
